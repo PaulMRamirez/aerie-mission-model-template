@@ -1,17 +1,17 @@
 package missionmodel;
 
-import gov.nasa.jpl.aerie.contrib.serialization.mappers.DoubleValueMapper;
-import gov.nasa.jpl.aerie.contrib.streamline.core.MutableResource;
-import gov.nasa.jpl.aerie.contrib.streamline.modeling.Registrar;
-import gov.nasa.jpl.aerie.contrib.streamline.modeling.discrete.Discrete;
-import gov.nasa.jpl.aerie.contrib.streamline.modeling.discrete.DiscreteEffects;
-import gov.nasa.jpl.aerie.merlin.protocol.types.Duration;
+import gov.nasa.jpl.plandev.contrib.serialization.mappers.DoubleValueMapper;
+import gov.nasa.jpl.plandev.contrib.streamline.core.MutableResource;
+import gov.nasa.jpl.plandev.contrib.streamline.modeling.Registrar;
+import gov.nasa.jpl.plandev.contrib.streamline.modeling.discrete.Discrete;
+import gov.nasa.jpl.plandev.contrib.streamline.modeling.discrete.DiscreteEffects;
+import gov.nasa.jpl.plandev.merlin.protocol.types.Duration;
 
-import static gov.nasa.jpl.aerie.contrib.metadata.UnitRegistrar.withUnit;
-import static gov.nasa.jpl.aerie.contrib.streamline.core.MutableResource.resource;
-import static gov.nasa.jpl.aerie.contrib.streamline.core.Resources.currentValue;
-import static gov.nasa.jpl.aerie.contrib.streamline.modeling.discrete.Discrete.discrete;
-import static gov.nasa.jpl.aerie.merlin.framework.ModelActions.delay;
+import static gov.nasa.jpl.plandev.contrib.metadata.UnitRegistrar.withUnit;
+import static gov.nasa.jpl.plandev.contrib.streamline.core.MutableResource.resource;
+import static gov.nasa.jpl.plandev.contrib.streamline.core.Resources.currentValue;
+import static gov.nasa.jpl.plandev.contrib.streamline.modeling.discrete.Discrete.discrete;
+import static gov.nasa.jpl.plandev.merlin.framework.ModelActions.delay;
 
 /* Example Mission Model delegate class
    This class includes two resource declarations and a method that can be spawned via a daemon task
